@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class ApplicationSecurityController {
 
-    @RequestMapping("/current-user")
+    @RequestMapping("/authentication/current-user")
     public String getCurrentUser() {
         Gson gson = new Gson();
 
