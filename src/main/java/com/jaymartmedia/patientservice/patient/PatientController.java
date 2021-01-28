@@ -20,6 +20,7 @@ public class PatientController {
     public List<Patient> getAllPatients(){
         Authentication auth = SecurityContextHolder.getContext().getAuthentication();
         System.out.println(auth.getName());
+        System.out.println(auth.getAuthorities());
         return patientService.getAllPatients();
     }
 
