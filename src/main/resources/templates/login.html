@@ -1,35 +1,60 @@
-<html lang="en"><head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title>Authentication Login</title>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-    <link href="https://getbootstrap.com/docs/4.0/examples/signin/signin.css" rel="stylesheet" crossorigin="anonymous">
-    <style>
-        body{
-            background-color:#3e3e3e;
-            color: white;
-        }
-    </style>
-</head>
-<body>
-<div class="container">
-    <form class="form-signin" method="post" action="/login">
-        <h2 class="form-signin-heading">Authentication Login</h2>
-        <p>
-            <label for="username" class="sr-only">Username</label>
-            <input type="text" id="username" name="username" class="form-control" placeholder="Username" required="" autofocus="">
-        </p>
-        <p>
-            <label for="password" class="sr-only">Password</label>
-            <input type="password" id="password" name="password" class="form-control" placeholder="Password" required="">
-        </p>
-        <p>
-            Remember me?
-            <input type="checkbox" id="remember-me" name="remember-me" class="form-control">
-        </p>
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
-    </form>
-</div>
-</body></html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>Login to Patient Tracker</title>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+        <link href="https://getbootstrap.com/docs/4.0/examples/signin/signin.css" rel="stylesheet" crossorigin="anonymous">
+        <style>
+            body{
+                background-color:#3e3e3e;
+                color: white;
+            }
+            .form-signin{
+                background: #333333cc;
+                border-radius: 7px;
+                padding: 30px;
+            }
+            .background-image{
+                /* Set rules to fill background */
+                min-height: 100%;
+                min-width: 1024px;
+                filter: blur(4px);
+
+                /* Set up proportionate scaling */
+                width: 100%;
+                height: auto;
+
+                /* Set up positioning */
+                position: fixed;
+                top: 0;
+                left: 0;
+                z-index: -1;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <form class="form-signin" method="post" action="/login">
+                <h2 class="form-signin-heading">Login</h2>
+                <p>
+                    <label for="username" class="sr-only">Username</label>
+                    <input type="text" id="username" name="username" class="form-control" placeholder="Username" required="" autofocus="">
+                </p>
+                <p>
+                    <label for="password" class="sr-only">Password</label>
+                    <input type="password" id="password" name="password" class="form-control" placeholder="Password" required="">
+                </p>
+                <p>
+                    <input type="checkbox" id="remember-me" name="remember-me">
+                    <label for="remember-me">Remember me on this device</label>
+                </p>
+                <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
+                <a class="btn btn-lg btn-primary btn-block" href="https://github.com/JayMartMedia/patient-js">View on Github</a>
+            </form>
+        </div>
+        <img class="background-image" src='/landing.jpeg' alt="page background"/>
+    </body>
+</html>
