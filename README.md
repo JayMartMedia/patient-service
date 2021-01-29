@@ -15,3 +15,4 @@ View the [Starting the Application](https://github.com/JayMartMedia/patient-js#s
 
 # Areas of Improvement
 + Users are currently hardcoded into the [ApplicationSecurityConfig](https://github.com/JayMartMedia/patient-service/blob/master/src/main/java/com/jaymartmedia/patientservice/security/ApplicationSecurityConfig.java#L59) - [Move them into the database](https://github.com/JayMartMedia/patient-service/issues/6)
++ [Add user registration](https://github.com/JayMartMedia/patient-service/issues/8)
